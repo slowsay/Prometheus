@@ -11,16 +11,16 @@ document.body.appendChild(_render.view);
 
 <pre>
 var disobj = new Prometheus.DisplayObjectContainer();
-        disobj.name = 'disobj';
-        _stage.addChild(disobj);
-        var _graphics = new Prometheus.Graphics();
-        _graphics.name = 'g0';
-        with (_graphics) {
+disobj.name = 'disobj';
+_stage.addChild(disobj);
+var _graphics = new Prometheus.Graphics();
+_graphics.name = 'g0';
+with (_graphics) {
             beginFill(0xff0000);
             drawRect(0, 0, 100, 100);
             endFill();
-        }
-        disobj.addChild(_graphics);
+ }
+disobj.addChild(_graphics);
 </pre>
 
 model
