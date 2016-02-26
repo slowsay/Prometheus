@@ -25,9 +25,9 @@ var disobj = new Prometheus.DisplayObjectContainer();
 
 model
 ----------------------------------------------
-*舞台渲染
-*图形渲染
-*example
+*舞台渲染<br/>
+*图形渲染<br/>
+*example<br/>
 
 version
 ----------------------------------------------
