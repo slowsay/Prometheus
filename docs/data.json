@@ -1,0 +1,911 @@
+{
+    "project": {
+        "name": "Documenting JavaScript with Prometheus",
+        "description": "一款开源HTML5 canvas 2d渲染库，利用as3模式编写而成",
+        "version": "1.0.0",
+        "url": "http://net.tutsplus.com"
+    },
+    "files": {
+        "src\\core\\Point.js": {
+            "name": "src\\core\\Point.js",
+            "modules": {},
+            "classes": {
+                "Prometheus.Point": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "src\\display\\DisplayObject.js": {
+            "name": "src\\display\\DisplayObject.js",
+            "modules": {},
+            "classes": {
+                "Prometheus.DisplayObject": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "src\\display\\DisplayObjectContainer.js": {
+            "name": "src\\display\\DisplayObjectContainer.js",
+            "modules": {},
+            "classes": {
+                "Prometheus.DisplayObjectContainer": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "src\\display\\Graphics.js": {
+            "name": "src\\display\\Graphics.js",
+            "modules": {},
+            "classes": {
+                "Prometheus.Graphics": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "src\\display\\Sprite.js": {
+            "name": "src\\display\\Sprite.js",
+            "modules": {},
+            "classes": {
+                "Prometheus.sprite": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "src\\display\\stage.js": {
+            "name": "src\\display\\stage.js",
+            "modules": {},
+            "classes": {
+                "Prometheus.stage": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "src\\event\\Events.js": {
+            "name": "src\\event\\Events.js",
+            "modules": {},
+            "classes": {
+                "Prometheus.Events": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "src\\geom\\Rectangle.js": {
+            "name": "src\\geom\\Rectangle.js",
+            "modules": {},
+            "classes": {
+                "Prometheus.Rectangle": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "src\\loader\\AssetsLoader.js": {
+            "name": "src\\loader\\AssetsLoader.js",
+            "modules": {},
+            "classes": {
+                "Prometheus.AssetsLoader": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "src\\render\\canvas\\CanvasRender.js": {
+            "name": "src\\render\\canvas\\CanvasRender.js",
+            "modules": {},
+            "classes": {
+                "Prometheus.CanvasRender": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "src\\render\\webgl\\WebglRender.js": {
+            "name": "src\\render\\webgl\\WebglRender.js",
+            "modules": {},
+            "classes": {
+                "Prometheus.WebGlRender": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "src\\state\\requestrender.js": {
+            "name": "src\\state\\requestrender.js",
+            "modules": {},
+            "classes": {
+                "Prometheus.requestRender": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "src\\state\\timeFPS.js": {
+            "name": "src\\state\\timeFPS.js",
+            "modules": {},
+            "classes": {
+                "Timefps": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "src\\utils\\utils.js": {
+            "name": "src\\utils\\utils.js",
+            "modules": {},
+            "classes": {},
+            "fors": {},
+            "namespaces": {}
+        },
+        "src\\Prometheus.js": {
+            "name": "src\\Prometheus.js",
+            "modules": {},
+            "classes": {
+                "Prometheus": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        }
+    },
+    "modules": {},
+    "classes": {
+        "Prometheus.Point": {
+            "name": "Prometheus.Point",
+            "shortname": "Prometheus.Point",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "file": "src\\core\\Point.js",
+            "line": 1,
+            "itemtype": "property",
+            "type": "number"
+        },
+        "Prometheus.DisplayObject": {
+            "name": "Prometheus.DisplayObject",
+            "shortname": "Prometheus.DisplayObject",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "file": "src\\display\\DisplayObject.js",
+            "line": 1,
+            "params": [
+                {
+                    "name": "name",
+                    "description": "",
+                    "type": "String"
+                }
+            ]
+        },
+        "Prometheus.DisplayObjectContainer": {
+            "name": "Prometheus.DisplayObjectContainer",
+            "shortname": "Prometheus.DisplayObjectContainer",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "file": "src\\display\\DisplayObjectContainer.js",
+            "line": 1,
+            "params": [
+                {
+                    "name": "width",
+                    "description": "",
+                    "type": "Number"
+                },
+                {
+                    "name": "height",
+                    "description": "",
+                    "type": "Number"
+                }
+            ]
+        },
+        "Prometheus.Graphics": {
+            "name": "Prometheus.Graphics",
+            "shortname": "Prometheus.Graphics",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "file": "src\\display\\Graphics.js",
+            "line": 1
+        },
+        "Prometheus.sprite": {
+            "name": "Prometheus.sprite",
+            "shortname": "Prometheus.sprite",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "file": "src\\display\\Sprite.js",
+            "line": 1
+        },
+        "Prometheus.stage": {
+            "name": "Prometheus.stage",
+            "shortname": "Prometheus.stage",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "file": "src\\display\\stage.js",
+            "line": 1
+        },
+        "Prometheus.Events": {
+            "name": "Prometheus.Events",
+            "shortname": "Prometheus.Events",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "file": "src\\event\\Events.js",
+            "line": 1
+        },
+        "Prometheus.Rectangle": {
+            "name": "Prometheus.Rectangle",
+            "shortname": "Prometheus.Rectangle",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "file": "src\\geom\\Rectangle.js",
+            "line": 1
+        },
+        "Prometheus.AssetsLoader": {
+            "name": "Prometheus.AssetsLoader",
+            "shortname": "Prometheus.AssetsLoader",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "file": "src\\loader\\AssetsLoader.js",
+            "line": 1,
+            "params": [
+                {
+                    "name": "urls",
+                    "description": "",
+                    "type": "String"
+                },
+                {
+                    "name": "acrossorigin",
+                    "description": "",
+                    "type": "Object"
+                }
+            ]
+        },
+        "Prometheus.CanvasRender": {
+            "name": "Prometheus.CanvasRender",
+            "shortname": "Prometheus.CanvasRender",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "file": "src\\render\\canvas\\CanvasRender.js",
+            "line": 1,
+            "params": [
+                {
+                    "name": "width",
+                    "description": "",
+                    "type": "Number"
+                },
+                {
+                    "name": "height",
+                    "description": "",
+                    "type": "Number"
+                },
+                {
+                    "name": "view",
+                    "description": "",
+                    "type": "Object"
+                },
+                {
+                    "name": "tranpsparent",
+                    "description": "",
+                    "type": "Number"
+                }
+            ]
+        },
+        "Prometheus.WebGlRender": {
+            "name": "Prometheus.WebGlRender",
+            "shortname": "Prometheus.WebGlRender",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "file": "src\\render\\webgl\\WebglRender.js",
+            "line": 1,
+            "params": [
+                {
+                    "name": "width",
+                    "description": "",
+                    "type": "Number"
+                },
+                {
+                    "name": "height",
+                    "description": "",
+                    "type": "Number"
+                },
+                {
+                    "name": "view",
+                    "description": "",
+                    "type": "Object"
+                },
+                {
+                    "name": "tranpsparent",
+                    "description": "",
+                    "type": "Number"
+                }
+            ]
+        },
+        "Prometheus.requestRender": {
+            "name": "Prometheus.requestRender",
+            "shortname": "Prometheus.requestRender",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "file": "src\\state\\requestrender.js",
+            "line": 1
+        },
+        "Timefps": {
+            "name": "Timefps",
+            "shortname": "Timefps",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "file": "src\\state\\timeFPS.js",
+            "line": 1
+        },
+        "Prometheus": {
+            "name": "Prometheus",
+            "shortname": "Prometheus",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "file": "src\\Prometheus.js",
+            "line": 1,
+            "author": "slowsay",
+            "description": "一款开源HTML5 canvas 2d渲染库，利用as3模式编写而成，"
+        }
+    },
+    "elements": {},
+    "classitems": [
+        {
+            "file": "src\\display\\DisplayObject.js",
+            "line": 7,
+            "itemtype": "property",
+            "name": "name",
+            "class": "Prometheus.DisplayObject"
+        },
+        {
+            "file": "src\\display\\DisplayObject.js",
+            "line": 11,
+            "itemtype": "property",
+            "name": "position",
+            "type": "Point",
+            "class": "Prometheus.DisplayObject"
+        },
+        {
+            "file": "src\\display\\DisplayObject.js",
+            "line": 16,
+            "description": "缩放",
+            "itemtype": "property",
+            "name": "scale",
+            "type": "point",
+            "class": "Prometheus.DisplayObject"
+        },
+        {
+            "file": "src\\display\\DisplayObject.js",
+            "line": 22,
+            "description": "轴中心点",
+            "itemtype": "property",
+            "name": "pivot",
+            "type": "point",
+            "class": "Prometheus.DisplayObject"
+        },
+        {
+            "file": "src\\display\\DisplayObject.js",
+            "line": 28,
+            "description": "旋转",
+            "itemtype": "property",
+            "name": "rotation",
+            "type": "number",
+            "class": "Prometheus.DisplayObject"
+        },
+        {
+            "file": "src\\display\\DisplayObject.js",
+            "line": 34,
+            "description": "坐标",
+            "itemtype": "property",
+            "name": "x,y",
+            "type": "number",
+            "class": "Prometheus.DisplayObject"
+        },
+        {
+            "file": "src\\display\\DisplayObject.js",
+            "line": 42,
+            "itemtype": "property",
+            "name": "mask",
+            "class": "Prometheus.DisplayObject"
+        },
+        {
+            "file": "src\\display\\DisplayObject.js",
+            "line": 46,
+            "itemtype": "property",
+            "name": "parent",
+            "class": "Prometheus.DisplayObject"
+        },
+        {
+            "file": "src\\display\\DisplayObject.js",
+            "line": 50,
+            "description": "透明度",
+            "itemtype": "property",
+            "name": "alpha(0-1)",
+            "type": "number",
+            "class": "Prometheus.DisplayObject"
+        },
+        {
+            "file": "src\\display\\DisplayObject.js",
+            "line": 56,
+            "description": "with visible",
+            "itemtype": "property",
+            "name": "autoAlpha",
+            "class": "Prometheus.DisplayObject"
+        },
+        {
+            "file": "src\\display\\DisplayObject.js",
+            "line": 62,
+            "itemtype": "property",
+            "name": "visible",
+            "class": "Prometheus.DisplayObject"
+        },
+        {
+            "file": "src\\display\\DisplayObject.js",
+            "line": 66,
+            "itemtype": "property",
+            "name": "parent",
+            "class": "Prometheus.DisplayObject"
+        },
+        {
+            "file": "src\\display\\DisplayObject.js",
+            "line": 70,
+            "itemtype": "property",
+            "name": "stage",
+            "class": "Prometheus.DisplayObject"
+        },
+        {
+            "file": "src\\display\\DisplayObject.js",
+            "line": 74,
+            "itemtype": "property",
+            "name": "buttonMode",
+            "class": "Prometheus.DisplayObject"
+        },
+        {
+            "file": "src\\display\\DisplayObject.js",
+            "line": 79,
+            "itemtype": "property",
+            "name": "children",
+            "type": "array",
+            "class": "Prometheus.DisplayObject"
+        },
+        {
+            "file": "src\\display\\DisplayObject.js",
+            "line": 84,
+            "itemtype": "property",
+            "name": "numchildren",
+            "type": "number",
+            "class": "Prometheus.DisplayObject"
+        },
+        {
+            "file": "src\\display\\DisplayObject.js",
+            "line": 91,
+            "itemtype": "method",
+            "name": "interactive",
+            "params": [
+                {
+                    "name": "x",
+                    "description": "",
+                    "type": "Number"
+                },
+                {
+                    "name": "y",
+                    "description": "",
+                    "type": "Number"
+                }
+            ],
+            "class": "Prometheus.DisplayObject"
+        },
+        {
+            "file": "src\\display\\DisplayObject.js",
+            "line": 114,
+            "itemtype": "method",
+            "name": "updateTransform",
+            "class": "Prometheus.DisplayObject"
+        },
+        {
+            "file": "src\\display\\DisplayObject.js",
+            "line": 121,
+            "itemtype": "method",
+            "name": "renderCacheSprite",
+            "params": [
+                {
+                    "name": "session",
+                    "description": "",
+                    "type": "String"
+                }
+            ],
+            "class": "Prometheus.DisplayObject"
+        },
+        {
+            "file": "src\\display\\DisplayObjectContainer.js",
+            "line": 11,
+            "itemtype": "property",
+            "name": "children",
+            "type": "array",
+            "class": "Prometheus.DisplayObjectContainer"
+        },
+        {
+            "file": "src\\display\\DisplayObjectContainer.js",
+            "line": 16,
+            "itemtype": "property",
+            "name": "numchildren",
+            "type": "number",
+            "class": "Prometheus.DisplayObjectContainer"
+        },
+        {
+            "file": "src\\display\\DisplayObjectContainer.js",
+            "line": 25,
+            "itemtype": "property",
+            "name": "width",
+            "type": "number",
+            "class": "Prometheus.DisplayObjectContainer"
+        },
+        {
+            "file": "src\\display\\DisplayObjectContainer.js",
+            "line": 37,
+            "itemtype": "property",
+            "name": "height",
+            "type": "number",
+            "class": "Prometheus.DisplayObjectContainer"
+        },
+        {
+            "file": "src\\display\\DisplayObjectContainer.js",
+            "line": 49,
+            "itemtype": "method",
+            "name": "addChild",
+            "class": "Prometheus.DisplayObjectContainer"
+        },
+        {
+            "file": "src\\display\\DisplayObjectContainer.js",
+            "line": 56,
+            "itemtype": "method",
+            "name": "addChildAt",
+            "class": "Prometheus.DisplayObjectContainer"
+        },
+        {
+            "file": "src\\display\\DisplayObjectContainer.js",
+            "line": 70,
+            "itemtype": "method",
+            "name": "getchildAt",
+            "class": "Prometheus.DisplayObjectContainer"
+        },
+        {
+            "file": "src\\display\\DisplayObjectContainer.js",
+            "line": 77,
+            "itemtype": "method",
+            "name": "getChildindex",
+            "class": "Prometheus.DisplayObjectContainer"
+        },
+        {
+            "file": "src\\display\\DisplayObjectContainer.js",
+            "line": 83,
+            "itemtype": "method",
+            "name": "removeChild",
+            "class": "Prometheus.DisplayObjectContainer"
+        },
+        {
+            "file": "src\\display\\DisplayObjectContainer.js",
+            "line": 89,
+            "itemtype": "method",
+            "name": "removeChildAt",
+            "class": "Prometheus.DisplayObjectContainer"
+        },
+        {
+            "file": "src\\display\\DisplayObjectContainer.js",
+            "line": 101,
+            "itemtype": "method",
+            "name": "setStageReference",
+            "class": "Prometheus.DisplayObjectContainer"
+        },
+        {
+            "file": "src\\display\\DisplayObjectContainer.js",
+            "line": 112,
+            "itemtype": "method",
+            "name": "removeStageReference",
+            "class": "Prometheus.DisplayObjectContainer"
+        },
+        {
+            "file": "src\\display\\DisplayObjectContainer.js",
+            "line": 123,
+            "itemtype": "method",
+            "name": "renderCanvas",
+            "class": "Prometheus.DisplayObjectContainer"
+        },
+        {
+            "file": "src\\display\\DisplayObjectContainer.js",
+            "line": 137,
+            "description": "children for rendering",
+            "itemtype": "method",
+            "name": "updateTransform",
+            "class": "Prometheus.DisplayObjectContainer"
+        },
+        {
+            "file": "src\\display\\Graphics.js",
+            "line": 10,
+            "itemtype": "method",
+            "name": "beginfill",
+            "type": "",
+            "class": "Prometheus.Graphics"
+        },
+        {
+            "file": "src\\display\\Graphics.js",
+            "line": 20,
+            "itemtype": "method",
+            "name": "endfill",
+            "class": "Prometheus.Graphics"
+        },
+        {
+            "file": "src\\display\\Graphics.js",
+            "line": 30,
+            "itemtype": "method",
+            "name": "drawRect",
+            "class": "Prometheus.Graphics"
+        },
+        {
+            "file": "src\\display\\Sprite.js",
+            "line": 15,
+            "itemtype": "method",
+            "name": "setTexture",
+            "class": "Prometheus.sprite"
+        },
+        {
+            "file": "src\\display\\Sprite.js",
+            "line": 22,
+            "itemtype": "method",
+            "name": "rendercanvas",
+            "class": "Prometheus.sprite"
+        },
+        {
+            "file": "src\\display\\stage.js",
+            "line": 6,
+            "itemtype": "property",
+            "name": "stage",
+            "type": "object",
+            "class": "Prometheus.stage"
+        },
+        {
+            "file": "src\\display\\stage.js",
+            "line": 11,
+            "itemtype": "property",
+            "name": "interactive",
+            "type": "boolean",
+            "class": "Prometheus.stage"
+        },
+        {
+            "file": "src\\display\\stage.js",
+            "line": 16,
+            "itemtype": "property",
+            "name": "dirty",
+            "type": "boolean",
+            "class": "Prometheus.stage"
+        },
+        {
+            "file": "src\\display\\stage.js",
+            "line": 21,
+            "itemtype": "property",
+            "name": "stage.hitarea",
+            "type": "Prometheus.Rectangle",
+            "class": "Prometheus.stage"
+        },
+        {
+            "file": "src\\display\\stage.js",
+            "line": 30,
+            "itemtype": "method",
+            "name": "setbgColor",
+            "class": "Prometheus.stage"
+        },
+        {
+            "file": "src\\display\\stage.js",
+            "line": 38,
+            "itemtype": "method",
+            "name": "updateTransform",
+            "class": "Prometheus.stage"
+        },
+        {
+            "file": "src\\geom\\Rectangle.js",
+            "line": 13,
+            "itemtype": "method",
+            "name": "clone",
+            "class": "Prometheus.Rectangle"
+        },
+        {
+            "file": "src\\geom\\Rectangle.js",
+            "line": 19,
+            "itemtype": "method",
+            "name": "contains",
+            "class": "Prometheus.Rectangle"
+        },
+        {
+            "file": "src\\loader\\AssetsLoader.js",
+            "line": 9,
+            "itemtype": "property",
+            "name": "assetsURLs",
+            "type": "Array",
+            "class": "Prometheus.AssetsLoader"
+        },
+        {
+            "file": "src\\loader\\AssetsLoader.js",
+            "line": 14,
+            "itemtype": "property",
+            "name": "across",
+            "type": "string",
+            "class": "Prometheus.AssetsLoader"
+        },
+        {
+            "file": "src\\loader\\AssetsLoader.js",
+            "line": 19,
+            "itemtype": "property",
+            "name": "arraylength",
+            "type": "number",
+            "class": "Prometheus.AssetsLoader"
+        },
+        {
+            "file": "src\\loader\\AssetsLoader.js",
+            "line": 27,
+            "itemtype": "method",
+            "name": "loadjs",
+            "class": "Prometheus.AssetsLoader"
+        },
+        {
+            "file": "src\\render\\canvas\\CanvasRender.js",
+            "line": 35,
+            "itemtype": "method",
+            "name": "render",
+            "class": "Prometheus.CanvasRender"
+        },
+        {
+            "file": "src\\render\\canvas\\CanvasRender.js",
+            "line": 45,
+            "itemtype": "method",
+            "name": "renderDisplayObject",
+            "class": "Prometheus.CanvasRender"
+        },
+        {
+            "file": "src\\render\\canvas\\CanvasRender.js",
+            "line": 52,
+            "itemtype": "method",
+            "name": "returnfps",
+            "class": "Prometheus.CanvasRender"
+        },
+        {
+            "file": "src\\render\\canvas\\CanvasRender.js",
+            "line": 61,
+            "itemtype": "method",
+            "name": "resize",
+            "class": "Prometheus.CanvasRender"
+        },
+        {
+            "file": "src\\render\\canvas\\CanvasRender.js",
+            "line": 71,
+            "itemtype": "method",
+            "name": "clear",
+            "class": "Prometheus.CanvasRender"
+        },
+        {
+            "file": "src\\render\\webgl\\WebglRender.js",
+            "line": 11,
+            "itemtype": "property",
+            "name": "width",
+            "type": "Number",
+            "class": "Prometheus.WebGlRender"
+        },
+        {
+            "file": "src\\render\\webgl\\WebglRender.js",
+            "line": 16,
+            "itemtype": "property",
+            "name": "height",
+            "type": "Number",
+            "class": "Prometheus.WebGlRender"
+        },
+        {
+            "file": "src\\render\\webgl\\WebglRender.js",
+            "line": 38,
+            "itemtype": "method",
+            "name": "render",
+            "params": [
+                {
+                    "name": "stage",
+                    "description": "",
+                    "type": "Object"
+                }
+            ],
+            "class": "Prometheus.WebGlRender"
+        },
+        {
+            "file": "src\\render\\webgl\\WebglRender.js",
+            "line": 45,
+            "itemtype": "method",
+            "name": "resize",
+            "params": [
+                {
+                    "name": "width",
+                    "description": "",
+                    "type": "Number"
+                },
+                {
+                    "name": "height",
+                    "description": "",
+                    "type": "Number"
+                }
+            ],
+            "class": "Prometheus.WebGlRender"
+        },
+        {
+            "file": "src\\utils\\utils.js",
+            "line": 1,
+            "description": "untils",
+            "itemtype": "method",
+            "name": "Prometheus.hex2rgb",
+            "class": "Prometheus"
+        },
+        {
+            "file": "src\\Prometheus.js",
+            "line": 10,
+            "itemtype": "method",
+            "name": "hitTest",
+            "params": [
+                {
+                    "name": "obj",
+                    "description": "",
+                    "type": "Object"
+                }
+            ],
+            "class": "Prometheus"
+        },
+        {
+            "file": "src\\Prometheus.js",
+            "line": 18,
+            "itemtype": "method",
+            "name": "isBallInBucket",
+            "params": [
+                {
+                    "name": "obj",
+                    "description": "",
+                    "type": "Object"
+                },
+                {
+                    "name": "obj2",
+                    "description": "",
+                    "type": "Object"
+                }
+            ],
+            "class": "Prometheus"
+        },
+        {
+            "file": "src\\Prometheus.js",
+            "line": 33,
+            "itemtype": "method",
+            "name": "errorcode",
+            "class": "Prometheus"
+        }
+    ],
+    "warnings": []
+}
