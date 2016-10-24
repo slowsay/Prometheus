@@ -3,8 +3,16 @@
 作为motion场景，类似 flashplayer平台，进行舞台渲染动画，可以放入外部图片，内置多边形，矩形，圆形，三角形等对象
 目前是初始版本
 
+[![NPM](https://nodei.co/npm/Prometheus.png)](https://nodei.co/npm/Prometheus/)
 
-## Example
+### Install
+
+```
+$ npm install Prometheus
+```
+
+### Example
+
 ```
 _stage = new Prometheus.Stage(0x000000);
 _render = new Prometheus.CanvasRender();
@@ -13,20 +21,15 @@ document.body.appendChild(_render.view);
 var disobj = new Prometheus.DisplayObjectContainer();
 disobj.name = 'disobj';
 _stage.addChild(disobj);
-var _graphics = new Prometheus.Graphics();
-_graphics.name = 'g0';
-with (_graphics) {
-            beginFill(0xff0000);
-            drawRect(0, 0, 100, 100);
-            endFill();
- }
-disobj.addChild(_graphics);
+_graphics = new Prometheus.Graphics().drawRect(0x00ff00, 10, 30, 100, 100);
+_scene.addChild(_graphics);
 ```
 
-## model
-*舞台渲染<br/>
-*图形渲染<br/>
-*example<br/>
+### Feature
+* 舞台渲染
+* 图形渲染
+* example
 
-## version
-v1.0.0 create
+### Version
+- v0.0.4 update
+- v0.0.5 update
