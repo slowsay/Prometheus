@@ -14,7 +14,7 @@ var game = {
         _graphics0 = new Prometheus.Graphics().drawRect(0x00ff00, 300, 300, 20, 20);
         _scene.addChild(_graphics);
         _scene.addChild(_graphics0);
-        console.log(_scene);
+        console.log(_graphics);
         //size
         this.Size();
         this.render();
