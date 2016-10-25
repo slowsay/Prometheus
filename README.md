@@ -28,8 +28,7 @@ _scene.addChild(_graphics);
 ### Feature
 * 舞台渲染
 * 图形渲染
-* example
+* 图像渲染
 
 ### Version
-- v0.0.4 update
-- v0.0.5 update
+- v0.0.6 update

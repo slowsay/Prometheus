@@ -1,6 +1,6 @@
 {
   "name": "prometheus",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "> 普罗米修斯，canvas渲染动画平台库，使用flash as3模式构建的，利用canvas这一特性， 作为motion场景，类似 flashplayer平台，进行舞台渲染动画，可以放入外部图片，内置多边形，矩形，圆形，三角形等对象 目前是初始版本",
   "main": "index.js",
   "bin": {
