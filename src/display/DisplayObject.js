@@ -1,93 +1,79 @@
 /**
- * @author slowsay
+ * @method Prometheus.DisplayObject
+ * @constructor
  */
 Prometheus.DisplayObject = function () {
-    /**
-     * @property name
-     */
     this.name = '';
+    this.x = 0;
+    this.y = 0;
+    this.sx = 0;
+    this.sy = 0;
+    this.swidth = 0;
+    this.sheight = 0;
+    this.width = 0;
+    this.height = 0;
     /**
-     *@property position
-     * this.position.x,this.position.y
-     *@type Point
-     */
-    this.position = new Prometheus.Point();
-    this.x = this.position.x;
-    this.y = this.position.y;
-    /**
-     * @property rectangle
-     */
-    this.rectangle = new Prometheus.Rectangle();
-    this.width = this.rectangle.width;
-    this.height = this.rectangle.height;
-    /**
-     * 缩放
-     * @property scale
-     * @type point
+     * @description 缩放
+     * @type {Prometheus.Point}
      */
     this.scale = new Prometheus.Point(1, 1);
     /**
-     * 轴中心点
-     * @property pivot
-     * @type point
+     * @description 轴中心点
+     * @type {Prometheus.Point}
      */
     this.pivot = new Prometheus.Point(0, 0);
     /**
-     * 旋转
-     * @property rotation
-     * @type number
+     * @description 旋转
+     * @type {number}
      */
     this.rotation = 0;
     /**
-     * @property mask
+     * @type {null}
      */
     this.mask = null;
     /**
-     * @property parent
+     *
+     * @type {null}
      */
     this.parent = null;
     /**
-     * 透明度
-     * @property alpha(0-1)
-     * @type number
+     * @descripton 透明度
+     * @type {number}
      */
     this.alpha = 1;
     /**
-     * with visible
-     * @property autoAlpha
      *
+     * @type {number}
      */
     this.autoAlpha = 1;
     /**
      *
+     * @type {boolean}
      */
     this.visible = true;
     /**
-     * @property parent
-     */
-    this.parent = null;
-    /**
-     * @property stage
+     *
+     * @type {null}
      */
     this.stage = null;
     /**
-     * @discription 是否需要动画
+     *
      * @type {boolean}
      */
-    this.animate=false;
+    this.animate = false;
     /**
-     * @property buttonMode
+     *
+     * @type {boolean}
      */
     this.buttonMode = false;
-
     /**
-     * @property children
-     * @type array
+     *
+     * @type {Array}
      */
     this.children = [];
     /**
-     * @property numchildren
-     * @type number
+     *
+     * @type {Array}
      */
     this.numChildren = [];
 };
@@ -96,7 +82,9 @@ Prometheus.DisplayObject.prototype.constructor = Prometheus.DisplayObject;
  * @method interactive
  */
 Object.defineProperty(Prometheus.DisplayObject, 'interactive', {});
-
+/**
+ * @parms {Number} x
+ */
 Object.defineProperty(Prometheus.DisplayObject, 'x', {
     set: function (v) {
         this.position.x = v;
@@ -113,15 +101,62 @@ Object.defineProperty(Prometheus.DisplayObject, 'y', {
         return this.position.y;
     }
 });
+Object.defineProperty(Prometheus.DisplayObject, 'sx', {
+    set: function (v) {
+        this.sx = v;
+    },
+    get: function () {
+        return this.sx;
+    }
+});
+Object.defineProperty(Prometheus.DisplayObject, 'sy', {
+    set: function (v) {
+        this.sy = v;
+    },
+    get: function () {
+        return this.sy;
+    }
+});
+Object.defineProperty(Prometheus.DisplayObject, 'swidth', {
+    set: function (v) {
+        this.swidth = v;
+    },
+    get: function () {
+        return this.swidth;
+    }
+});
+Object.defineProperty(Prometheus.DisplayObject, 'sheight', {
+    set: function (v) {
+        this.sheight = v;
+    },
+    get: function () {
+        return this.sheight;
+    }
+});
+Object.defineProperty(Prometheus.DisplayObject, 'width', {
+    set: function (v) {
+        this.width = v;
+    },
+    get: function () {
+        return this.width;
+    }
+});
+Object.defineProperty(Prometheus.DisplayObject, 'height', {
+    set: function (v) {
+        this.height = v;
+    },
+    get: function () {
+        return this.height;
+    }
+});
 /**
  * @method updateTransform
  */
 Prometheus.DisplayObject.prototype.updateTransform = function () {
-
 };
-
 /**
- * @mthod renderCacheSprite
+ * @method renderCacheSprite
+ * @param session
  */
 Prometheus.DisplayObject.prototype.renderCacheSprite = function (session) {
     if (session.gl)
@@ -130,5 +165,4 @@ Prometheus.DisplayObject.prototype.renderCacheSprite = function (session) {
         Prometheus.Sprite.prototype.renderCanvas.call(this, session);
 };
 Prometheus.DisplayObject.prototype.renderCanvas = function (session) {
-
 }

@@ -32,3 +32,4 @@ _scene.addChild(_graphics);
 
 ### Version
 - v0.0.6 update
+- v0.0.8 modify drawimage

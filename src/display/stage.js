@@ -44,7 +44,6 @@ Prometheus.Stage.prototype.updateTransform = function () {
 };
 Prometheus.Stage.prototype.renderCanvas = function (session) {
     for (var i = 0, j = this.children.length; i < j; i++) {
-        //displayobjectcontainer
         this.children[i].renderCanvas(session);
     }
 }

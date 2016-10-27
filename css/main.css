@@ -1,1 +1,5 @@
-body { margin: 0;padding: 0;overflow: hidden;  }
+body { margin: 0;padding: 0;overflow: hidden;background:#000  }
+.fps,.ctr,.health,.msg{position:absolute;padding:5px;}
+.ctr{left:450px;display:block;cursor:pointer;}
+.health{bottom:10px;}
+.msg{bottom:10px;left:430px;}

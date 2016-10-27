@@ -10,30 +10,7 @@ Prometheus.DisplayObjectContainer = function () {
 };
 Prometheus.DisplayObjectContainer.prototype = Object.create(Prometheus.DisplayObject.prototype);
 Prometheus.DisplayObjectContainer.prototype.constructor = Prometheus.DisplayObjectContainer;
-/**
- * @property width
- * @type number
- */
-Object.defineProperty(Prometheus.DisplayObjectContainer.prototype, 'width', {
-    get: function () {
-        return this.rectangle.width;
-    },
-    set: function (v) {
-        this.rectangle.width = v;
-    }
-});
-/**
- * @property height
- * @type number
- */
-Object.defineProperty(Prometheus.DisplayObjectContainer.prototype, 'height', {
-    get: function () {
-        return this.rectangle.height;
-    },
-    set: function (v) {
-        this.rectangle.height = v;
-    }
-});
+
 /**
  * @method addChild
  */
@@ -70,12 +47,14 @@ Prometheus.DisplayObjectContainer.prototype.getChildIndex = function (obj) {
 };
 /**
  * @method removeChild
+ * @param obj
  */
 Prometheus.DisplayObjectContainer.prototype.removeChild = function (obj) {
     return this.removeChildAt(this.children.indexOf(obj));
 };
 /**
  * @method removeChildAt
+ * @param index
  */
 Prometheus.DisplayObjectContainer.prototype.removeChildAt = function (index) {
     var child = this.getChildAt(index);
@@ -87,7 +66,8 @@ Prometheus.DisplayObjectContainer.prototype.removeChildAt = function (index) {
     return child;
 };
 /**
- *@method setStageReference
+ * @method setStageReference
+ * @param o
  */
 Prometheus.DisplayObjectContainer.prototype.setStageReference = function (o) {
     this.stage = o;
@@ -110,6 +90,7 @@ Prometheus.DisplayObjectContainer.prototype.removeStageReference = function () {
 };
 /**
  * @method renderCanvas
+ * @param session
  */
 Prometheus.DisplayObjectContainer.prototype.renderCanvas = function (session) {
     if (this.visible == false || this.alpha == 0)
@@ -117,8 +98,8 @@ Prometheus.DisplayObjectContainer.prototype.renderCanvas = function (session) {
     /**
      *@method rendercacheSprite;
      */
-    //if (this.cacheAsBitmap)
-    //    this.renderCacheSprite(session);
+    if (this.cacheAsBitmap)
+        this.renderCacheSprite(session);
     for (var i = 0, j = this.children.length; i < j; i++) {
         this.children[i].renderCanvas(session);
     }
