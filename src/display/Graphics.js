@@ -70,7 +70,6 @@ Prometheus.Graphics.prototype.updateTransform = function () {
 Prometheus.Graphics.prototype.renderCanvas = function (session) {
     var ctx2d = session.context;
     for (var i = 0, arr = this.graphicsData; i < arr.length; i++) {
-        ctx2d.beginPath();
         ctx2d.fillStyle = arr[i].bgcolor;
         ctx2d.fillRect(arr[i].x, arr[i].y, arr[i].w, arr[i].h);
     }

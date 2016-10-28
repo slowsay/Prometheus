@@ -105,7 +105,7 @@ Prometheus.CanvasRender.prototype.resize = function (width, height) {
  * @method clear
  */
 Prometheus.CanvasRender.prototype.clear = function () {
-    this.context.clearRect(0, 0, this.width, this.height);
+    //this.context.clearRect(0, 0, this.width, this.height);
 };
 
 /**

@@ -56,13 +56,15 @@ Prometheus.Spritemap.prototype.renderCanvas = function (session) {
     if (this.visible === false || this.alpha === 0)
         return;
     ctx2d.save();
+    ctx2d.setTransform(1, 0, 0, 1, 0, 0);
+    ctx2d.clearRect(0, 0, _wid, _hei);
     for (var i = 0, arr = this.textureSprite; i < arr.length; i++) {
         var sx = arr[i].sx, sy = arr[i].sy, dx = arr[i].x, dy = arr[i].y, sw = arr[i].swidth, sh = arr[i].sheight, WW = arr[i].width, HH = arr[i].height;
         var _img = arr[i].img;
         var w = _img.width || 0, h = _img.height || 0;
         var row = Math.ceil(_hei / h);
         var offsetx = 0, offsety = 0;
-        off2d.clearRect(0, 0, _wid, _hei);
+
         off2d.beginPath();
         off2d.rect(0, 0, w, _hei);
         off2d.clip();

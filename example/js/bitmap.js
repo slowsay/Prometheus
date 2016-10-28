@@ -2,7 +2,7 @@
  * @author slowsay
  */
 var _render, _stage, _wid = 0, _hei = 0, _scene, _i = 0, dx = 0, dy = 0, speeds = .5, ballspeed = 3, _speeds = 1;
-var _map, _cloud, _cloud0, _enemy;
+var _map, _cloud, _cloud0;
 var tmx = tmy = initmx = initmy = 0, mx, my, flag, offlag = !0;
 var honorball = [];
 var enemyball = [];
@@ -11,7 +11,7 @@ function ball() {
     return {
         target: null,
         dead: false,
-        speeds: 3,
+        speeds: 15,
         level: 1
     };
 }
