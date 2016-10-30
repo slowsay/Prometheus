@@ -5,6 +5,10 @@
 
 [![NPM](https://nodei.co/npm/Prometheus.png)](https://nodei.co/npm/Prometheus/)
 
+### View
+
+![](./images/0.gif)
+
 ### Install
 
 ```
@@ -29,7 +33,9 @@ _scene.addChild(_graphics);
 * 舞台渲染
 * 图形渲染
 * 图像渲染
+* 添加map渲染功能
 
 ### Version
 - v0.0.6 update
 - v0.0.8 modify drawimage
+- v0.0.9 add spritemap

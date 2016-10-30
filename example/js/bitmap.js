@@ -30,7 +30,7 @@ var honor = {
     dead: false,
     speeds: 1,
     heath: 3,
-    head:3
+    head: 3
 }
 var game = {
     init: function () {
@@ -173,7 +173,7 @@ var game = {
             case 1:
                 arr[i].speeds = 1;
                 if (_i > 100) {
-                    _i = 0, game.enemyaddBall(arr[i].target.x + arr[i].target.width / 2 - 10, arr[i].target.y+arr[i].target.height);
+                    _i = 0, game.enemyaddBall(arr[i].target.x + arr[i].target.width / 2 - 10, arr[i].target.y + arr[i].target.height);
                 }
                 break;
             case 2:
@@ -212,7 +212,7 @@ var game = {
             }
             if (honor.heath == 0) {
                 honor.head--;
-                honor.heath=3;
+                honor.heath = 3;
                 $('.ctr').click();
             }
         }
@@ -250,3 +250,4 @@ var game = {
 $(function () {
     game.init();
 });
+

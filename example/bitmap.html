@@ -23,6 +23,13 @@
 </head>
 
 <body>
+<script>
+    var str=(function(){
+        var buffer=new ArrayBuffer(1000);
+        new DataView(buffer).setInt16()
+    })();
+    console.log(str)
+</script>
 <div class="fps"></div>
 <div class="ctr">暂停</div>
 <div class="health"></div>
