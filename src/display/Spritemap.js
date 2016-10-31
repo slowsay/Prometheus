@@ -55,27 +55,29 @@ Prometheus.Spritemap.prototype.renderCanvas = function (session) {
     var _wid = this.stage.width, _hei = this.stage.height;
     if (this.visible === false || this.alpha === 0)
         return;
-    ctx2d.save();
-    ctx2d.setTransform(1, 0, 0, 1, 0, 0);
-    ctx2d.clearRect(0, 0, _wid, _hei);
     for (var i = 0, arr = this.textureSprite; i < arr.length; i++) {
         var sx = arr[i].sx, sy = arr[i].sy, dx = arr[i].x, dy = arr[i].y, sw = arr[i].swidth, sh = arr[i].sheight, WW = arr[i].width, HH = arr[i].height;
         var _img = arr[i].img;
         var w = _img.width || 0, h = _img.height || 0;
         var row = Math.ceil(_hei / h);
         var offsetx = 0, offsety = 0;
-
+        off2d.save();
+        off2d.clearRect(0, 0, _wid, _hei);
         off2d.beginPath();
         off2d.rect(0, 0, w, _hei);
         off2d.clip();
+        off2d.setTransform(1, 0, 0, 1, 0, 0);
         offsetx = .1 + dx % w, offsety = .1 + dy % h;
         if (dx > 0)
             offsetx -= w;
         if (dy > 0)
             offsety -= h;
+        //for(var p=0;p<row;p++){
+        //    off2d.drawImage(_img, sx, sy, w, h, 0, p * h + offsety, w, h);
+        //}
         off2d.drawImage(_img, sx, sy, w, h, 0, offsety, w, h);
         off2d.drawImage(_img, sx, sy, w, h, 0, row * h + offsety, w, h);
+        off2d.restore();
     }
     ctx2d.drawImage(offview, 0, 0);
-    ctx2d.restore();
 };

@@ -46,12 +46,13 @@ Prometheus.CanvasRender.prototype.constructor = Prometheus.CanvasRender;
  * @param stage
  */
 Prometheus.CanvasRender.prototype.render = function (stage) {
+    stage.updateTransform();
     stage.width=this.width,stage.height=this.height;
     if (!this.transparent && this.clearBeforeRender)
         this.context.fillStyle = stage.backgroundString, this.context.fillRect(0, 0, this.width, this.height);
     else if (this.transparent && this.clearBeforeRender)
         this.context.clearRect(0, 0, this.width, this.height);
-    stage.updateTransform();
+
     this.renderDisplayObject(stage);
 };
 /**
@@ -105,7 +106,7 @@ Prometheus.CanvasRender.prototype.resize = function (width, height) {
  * @method clear
  */
 Prometheus.CanvasRender.prototype.clear = function () {
-    //this.context.clearRect(0, 0, this.width, this.height);
+    this.context.clearRect(0, 0, this.width, this.height);
 };
 
 /**

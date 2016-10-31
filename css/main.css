@@ -2,4 +2,4 @@ body { margin: 0;padding: 0;overflow: hidden;background:#000  }
 .fps,.ctr,.health,.msg{position:absolute;padding:5px;}
 .ctr{left:450px;display:block;cursor:pointer;}
 .health{bottom:10px;}
-.msg{bottom:10px;left:430px;}
+.msg{width:100%;height:100%;text-align:center;display: none;line-height:200px;align-items: center;justify-content: center;background:#fff;}
