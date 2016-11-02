@@ -14,23 +14,7 @@ var game = {
         _stage.addChild(_scene);
         var _rangle = 50;
         for (var i = 0, len = 6; i < len; i++) {
-            var _pp = new Prometheus.Drawpolygon().draw('rgba(240,50,20,1)', 'rgba(20,50,20,1)', 2, 20, 20, [
-                {
-                    x: 50,
-                    y: 20
-                }, {
-                    x: 50,
-                    y: 120
-                }, {
-                    x: 20,
-                    y: 120
-                }, {
-                    x: 38,
-                    y: 60
-                }, {
-                    x: 200,
-                    y: 150
-                }]);
+            var _pp = new Prometheus.Drawline().draw('rgba(240,50,20,1)', 1, _centerx, _centery, 20, 20);
             _scene.addChild(_pp);
             var _radian = 2 * Math.PI / len * i;
             _pp.x = _wid / 2 + _rangle * (i + 1) * Math.sin(_radian) , _pp.y = _hei / 2 + _rangle * (i + 1) * Math.cos(_radian);

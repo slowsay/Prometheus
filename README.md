@@ -34,8 +34,4 @@ _scene.addChild(_graphics);
 * 图形渲染
 * 图像渲染
 * 添加map渲染功能
-
-### Version
-- v0.0.6 update
-- v0.0.8 modify drawimage
-- v0.0.9 add spritemap
+* 添加example

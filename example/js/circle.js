@@ -12,30 +12,14 @@ var game = {
         //
         _scene = new Prometheus.DisplayObjectContainer();
         _stage.addChild(_scene);
-        var _rangle = 50;
-        for (var i = 0, len = 6; i < len; i++) {
-            var _pp = new Prometheus.Drawpolygon().draw('rgba(240,50,20,1)', 'rgba(20,50,20,1)', 2, 20, 20, [
-                {
-                    x: 50,
-                    y: 20
-                }, {
-                    x: 50,
-                    y: 120
-                }, {
-                    x: 20,
-                    y: 120
-                }, {
-                    x: 38,
-                    y: 60
-                }, {
-                    x: 200,
-                    y: 150
-                }]);
+        var _rangle = 100;
+        for (var i = 0, len = 20; i < len; i++) {
+            var _pp = new Prometheus.Drawcircle().draw('rgba(240,50,20,1)', 'rgba(255,255,20,1)', 0, 20, 20, 10,true);
             _scene.addChild(_pp);
             var _radian = 2 * Math.PI / len * i;
             _pp.x = _wid / 2 + _rangle * (i + 1) * Math.sin(_radian) , _pp.y = _hei / 2 + _rangle * (i + 1) * Math.cos(_radian);
+            _pp.alpha = Math.abs(1 - .05 * i);
         }
-        console.log(_scene);
         //size
         this.Size();
         this.render();
@@ -53,8 +37,10 @@ var game = {
         $('.fps').html(_render.status());
     },
     render: function () {
-        game.update();
         _render.render(_stage);
+
+        game.update();
+
         requestRender(game.render);
     },
     Size: function () {

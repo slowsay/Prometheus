@@ -39,9 +39,11 @@ Prometheus.Text.prototype.updateTransform = function () {
 Prometheus.Text.prototype.renderCanvas = function (session) {
     var ctx2d = session.context;
     for (var i = 0, arr = this.currentText; i < arr.length; i++) {
+        ctx2d.beginPath();
         ctx2d.font = arr[i].font;
         ctx2d.fillStyle = arr[i].color;
         ctx2d.fillText(arr[i].t, arr[i].x, arr[i].y);
         arr[i].txtwidth = ctx2d.measureText(arr[i].t).width;
+        ctx2d.closePath();
     }
 }
